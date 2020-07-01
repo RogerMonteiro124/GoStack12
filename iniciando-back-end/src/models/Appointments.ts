@@ -25,7 +25,7 @@ class Appointment{
     created_at: Date;
 
     @UpdateDateColumn()
-    updated: Date;
+    updated_at: Date;
 
 }
 
