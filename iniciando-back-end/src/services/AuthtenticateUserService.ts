@@ -31,7 +31,7 @@ class AuthtenticateUserService{
         if(!passwordMached){
             throw new Error('Incorrecct email/password');
         }
-        const token = sign({}, authConfig.jwt.secret, {subject: user.id,expiresIn: authConfig.jwt.expiresIn});
+        const token = sign({}, authConfig.jwt.secret,{subject: user.id,expiresIn: authConfig.jwt.expiresIn});
 
         return{
             user,
